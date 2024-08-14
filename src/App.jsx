@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Roadmap from './Components/Roadmap';
@@ -7,9 +8,7 @@ import Findevents from './Components/Findevents';
 import Esmoai from './Components/Esmoai';
 import Footer from './Components/Footer';
 
-
 function App() {
-
   return (
     <>
       <Navbar />
@@ -21,7 +20,7 @@ function App() {
       <Aboutus />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
