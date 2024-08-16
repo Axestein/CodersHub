@@ -4,7 +4,7 @@ import maps from '../assets/maps.png'; // Ensure the path to your map image is c
 
 const Community = () => {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 relative overflow-hidden px-4">
+    <div id="community" className="bg-black text-white min-h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 relative overflow-hidden px-4">
       {/* Text and Image Container */}
       <div className="text-center max-w-3xl mx-auto">
         {/* Bold Text */}

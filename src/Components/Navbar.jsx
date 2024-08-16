@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import navbarlogo from '../assets/navbarlogo.png';
+import navbarlogo from '../assets/navbarlogo.png'; // Adjust the import path if needed
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black fixed top-0 left-0 right-0 z-50 shadow-md mt-4 mx-4 lg:mx-8 border border-white border-opacity-25 rounded-lg">
+    <nav className="bg-black fixed top-0 left-0 right-0 z-50 shadow-md mx-4 mt-4 lg:mx-8 border border-white border-opacity-25 rounded-lg">
       <div className="flex items-center justify-between max-w-5xl mx-auto p-2 lg:p-4">
         <a href="/" className="flex items-center">
           <img src={navbarlogo} className="h-6 mr-2 sm:h-9 sm:mr-3" alt="Navbar Logo" />
@@ -29,7 +29,7 @@ const Navbar = () => {
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-6 lg:mt-0">
             <li>
               <a
-                href="/"
+                href="#home"
                 className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-purple-500 hover:text-purple-500 transition-all duration-300"
               >
                 Home
@@ -37,7 +37,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/roadmap"
+                href="#roadmap"
                 className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-purple-500 hover:text-purple-500 transition-all duration-300"
               >
                 Roadmaps
@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/community"
+                href="#community"
                 className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-purple-500 hover:text-purple-500 transition-all duration-300"
               >
                 Community
@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/esmoai"
+                href="#esmoai"
                 className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-purple-500 hover:text-purple-500 transition-all duration-300"
               >
                 Esmo AI
@@ -61,7 +61,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/findevents"
+                href="#findevents"
                 className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-purple-500 hover:text-purple-500 transition-all duration-300"
               >
                 Find Events
@@ -69,7 +69,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/aboutus"
+                href="#aboutus"
                 className="block py-2 pl-2 pr-2 text-gray-300 border-b border-transparent hover:border-purple-500 hover:text-purple-500 transition-all duration-300"
               >
                 About Us

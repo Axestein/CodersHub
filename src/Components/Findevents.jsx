@@ -4,7 +4,7 @@ import Globe2 from '../assets/Globe2.png';
 
 const Findevents = () => {
   return (
-    <div className="relative min-h-screen bg-black text-white py-16 px-4 overflow-hidden">
+    <div id="findevents" className="relative min-h-screen bg-black text-white py-16 px-4 overflow-hidden">
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center mb-8">Events and Tips</h1>
 

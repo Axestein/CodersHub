@@ -16,8 +16,20 @@ const Esmoai = () => {
     textAlign: 'center', // Center text alignment
   };
 
+  const boxStyle = {
+    background: 'rgba(255, 255, 255, 0.4)', // More translucent background
+    borderRadius: '8px',
+    padding: '16px',
+    margin: '2px',
+    width: '100%',
+    maxWidth: '300px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+    textAlign: 'center',
+    backdropFilter: 'blur(18px)', // Increased blur effect for more translucency
+  };
+
   return (
-    <div 
+    <div id="esmoai"
       className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white py-16 px-4 overflow-hidden"
       style={{ 
         backgroundImage: `url(${grid})`, 
@@ -34,16 +46,26 @@ const Esmoai = () => {
       <h2 className="text-xl font-medium text-white z-10 mb-6">
         Ask Your Doubts to Esmo
       </h2>
+      {/* Beginner-Friendly Questions */}
+      <div className="flex justify-center gap-4 mb-8">
+        <div style={boxStyle} className="flex flex-col justify-center items-center">
+          <p className="text-gray-800 font-medium">What is Machine learning?</p>
+        </div>
+        <div style={boxStyle} className="flex flex-col justify-center items-center">
+          <p className="text-gray-800 font-medium">C Basics for beginners</p>
+        </div>
+      </div>
       {/* Input Bar */}
-      <div className="flex items-center bg-white rounded-lg overflow-hidden shadow-lg p-2 w-full max-w-md">
+      <div className="flex items-center bg-white rounded-lg overflow-hidden shadow-lg p-4 w-full max-w-lg">
         {/* Text Input */}
         <input
           type="text"
           placeholder="Type your doubts here..."
-          className="flex-grow p-2 text-gray-600 bg-white border-none outline-none"
+          className="flex-grow p-3 text-gray-600 bg-white border-none outline-none"
+          style={{ fontSize: '1rem' }} // Increase font size for better readability
         />
         {/* Send Button */}
-        <button className="bg-purple-600 p-2 rounded-lg flex items-center justify-center">
+        <button className="bg-purple-600 p-3 rounded-lg flex items-center justify-center">
           <FiSend className="text-white text-xl" />
         </button>
       </div>

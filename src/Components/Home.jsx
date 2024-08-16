@@ -8,7 +8,7 @@ import CommunityImg from '../assets/Community.png';
 
 const Home = () => {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 relative overflow-hidden">
+    <div id="home" className="bg-black text-white min-h-screen flex flex-col items-center justify-center pt-24 lg:pt-0 relative overflow-hidden">
       {/* Gradient Backgrounds */}
       <img 
         src={Gradient1} 
