@@ -35,26 +35,26 @@ const Home = () => {
 
       {/* Boxes Section */}
       <div className="flex flex-wrap justify-center gap-4 relative z-20">
-        <div className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
+        <a href="#roadmap" className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
           <img src={RoadmapImg} alt="Roadmaps" className="w-12 h-12 mb-2" />
           <p className="text-lg font-semibold mb-2 text-center">ROADMAPS</p>
           <p className="text-sm font-thin text-left hidden md:block">Roadmaps and resources to boost your tech journey.</p>
-        </div>
-        <div className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
-          <img src={EventsImg} alt="Events" className="w-12 h-12 mb-2" />
-          <p className="text-lg font-semibold mb-2 text-center">EVENTS</p>
-          <p className="text-sm font-thin text-left hidden md:block">Stay ahead with curated events and tips.</p>
-        </div>
-        <div className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
-          <img src={AiSupportImg} alt="AI Support" className="w-12 h-12 mb-2" />
-          <p className="text-lg font-semibold mb-2 text-center">AI SUPPORT</p>
-          <p className="text-sm font-thin text-left hidden md:block">Get personalized guidance and support with ESMO AI.</p>
-        </div>
-        <div className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
+        </a>
+        <a href="#community" className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
           <img src={CommunityImg} alt="Community" className="w-12 h-12 mb-2" />
           <p className="text-lg font-semibold mb-2 text-center">COMMUNITY</p>
           <p className="text-sm font-thin text-left hidden md:block">Join communities to collab and network.</p>
-        </div>
+        </a>
+        <a href="#esmoai" className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
+          <img src={AiSupportImg} alt="AI Support" className="w-12 h-12 mb-2" />
+          <p className="text-lg font-semibold mb-2 text-center">AI SUPPORT</p>
+          <p className="text-sm font-thin text-left hidden md:block">Get personalized guidance and support with ESMO AI.</p>
+        </a>
+        <a href="#findevents" className="bg-black border border-gray-300 p-4 rounded-lg shadow-lg w-56 h-40 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:border-purple-500">
+          <img src={EventsImg} alt="Events" className="w-12 h-12 mb-2" />
+          <p className="text-lg font-semibold mb-2 text-center">EVENTS</p>
+          <p className="text-sm font-thin text-left hidden md:block">Stay ahead with curated events and tips.</p>
+        </a> 
       </div>
     </div>
   );
