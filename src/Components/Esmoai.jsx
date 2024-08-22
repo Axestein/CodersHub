@@ -9,65 +9,56 @@ const Esmoai = () => {
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
     color: 'transparent',
-    display: 'inline', // Change to inline to keep text in one line
-    fontSize: '4rem', // Adjust size if necessary
-    zIndex: 10, // Ensures it is above other content
-    lineHeight: '1.2', // Adjust line height to make sure text fits well
-    textAlign: 'center', // Center text alignment
+    display: 'inline',
+    fontSize: '3rem', // Reduced font size for better fit
+    zIndex: 10,
+    lineHeight: '1.2',
+    textAlign: 'center',
   };
 
   const boxStyle = {
-    background: 'rgba(255, 255, 255, 0.4)', // More translucent background
+    background: 'rgba(255, 255, 255, 0.4)',
     borderRadius: '8px',
-    padding: '16px',
+    padding: '12px', // Reduced padding for better fit
     margin: '2px',
     width: '100%',
-    maxWidth: '300px',
+    maxWidth: '250px', // Reduced max width
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     textAlign: 'center',
-    backdropFilter: 'blur(18px)', // Increased blur effect for more translucency
+    backdropFilter: 'blur(18px)',
   };
 
   return (
-    <div id="esmoai"
-      className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white py-16 px-4 overflow-hidden"
+    <div
+      id="esmoai"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white py-8 px-4 overflow-hidden"
       style={{ 
         backgroundImage: `url(${grid})`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center',
-        zIndex: 1 // Ensure the container is below the text content
+        zIndex: 1,
       }}
     >
       {/* Heading */}
-      <h1 className="font-extrabold mt-8 mb-4" style={headingStyle}>
+      <h1 className="font-extrabold mt-4 mb-2" style={headingStyle}>
         ESMO AI
       </h1>
       {/* Subheading */}
-      <h2 className="text-xl font-medium text-white z-10 mb-6">
+      <h2 className="text-lg font-medium text-white z-10 mb-4">
         Ask Your Doubts to Esmo
       </h2>
-      {/* Beginner-Friendly Questions */}
-      <div className="flex justify-center gap-4 mb-8">
-        <div style={boxStyle} className="flex flex-col justify-center items-center">
-          <p className="text-gray-800 font-medium">What is Machine learning?</p>
+
+      {/* Chatbot Container */}
+      <div className="w-full flex justify-center mb-6">
+        <div className="w-full max-w-lg">
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/NbJvaDWe0XDa1H-zkh6zg"
+            width="100%"
+            style={{ height: '100%', minHeight: '500px', border: 'none' }}
+            frameBorder="0"
+            title="Chatbot"
+          />
         </div>
-        <div style={boxStyle} className="flex flex-col justify-center items-center">
-          <p className="text-gray-800 font-medium">C Basics for beginners</p>
-        </div>
-      </div>
-      {/* Input Bar */}
-      <div className="flex items-center bg-white rounded-lg overflow-hidden shadow-lg p-4 w-full max-w-lg">
-        {/* Text Input */}
-        <input
-          type="text"
-          placeholder="Type your doubts here..."
-          className="flex-grow p-3 text-gray-600 bg-white border-none outline-none"
-          style={{ fontSize: '1rem' }} // Increase font size for better readability
-        />
-        {/* Send Button */}
-        <button className="bg-purple-600 p-3 rounded-lg flex items-center justify-center">
-          <FiSend className="text-white text-xl" />
-        </button>
       </div>
     </div>
   );

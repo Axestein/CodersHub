@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="space-y-2 text-left">
               <h3 className="text-sm font-semibold">Home</h3>
               <ul className="space-y-1 text-sm">
-                <li><a href="#home" className="hover:text-purple-400">Home</a></li>
+                <li><a href="#home" className="hover:text-purple-400">Content</a></li>
               </ul>
             </div>
 
@@ -65,7 +65,6 @@ const Footer = () => {
               <h3 className="text-sm font-semibold">About Us</h3>
               <ul className="space-y-1 text-sm">
                 <li><a href="#aboutus" className="hover:text-purple-400">What We Provide</a></li>
-                <li><a href="#aboutus" className="hover:text-purple-400">Our Team</a></li>
               </ul>
             </div>
           </div>
